@@ -16,7 +16,7 @@ const Countries = () => {
       <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)'}}>
       
       {
-        countries.map(country=><Country country={country}></Country>)
+        countries.map(country=><Country key={country.capital} country={country}></Country>)
       }
     </div>
     </div>
